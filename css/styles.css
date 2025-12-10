@@ -406,53 +406,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .side-nav {
+    display: none;
+  }
+
   .page-wrapper {
     position: relative;
     z-index: 1;
     margin-left: 0;
-    padding: 4.5rem 1rem 0;
-  }
-
-  .side-nav {
-    top: 0.75rem;
-    left: 50%;
-    transform: translateX(-50%);
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    background: rgba(0, 0, 0, 0.9);
-    padding: 0.35rem 0.6rem;
-    border-radius: 999px;
-    height: auto;
-  }
-
-  #sideNav {
-    display: flex;
-    flex-direction: row !important;
-    align-items: center;
-    gap: 0.35rem;
-  }
-
-  .side-nav .nav-link {
-    margin: 0 0.15rem;
-    font-size: 0.68rem;
-    padding: 0.4rem 0.75rem;
-    white-space: nowrap;
-  }
-
-  .side-nav .nav-link-contact,
-  .side-nav .nav-link-components {
-    margin-top: 0;
-  }
-
-  .theme-toggle {
-    margin-top: 0;
-    margin-left: 0.5rem;
+    padding: 2.5rem 1rem 0;
   }
 
   .section-hero {
-    padding-top: 6rem;
+    padding-top: 4rem;
   }
 }
 
