@@ -1,4 +1,3 @@
-// main.js
 document.addEventListener("DOMContentLoaded", () => {
   const themeToggle = document.getElementById("themeToggle");
   if (themeToggle) {
@@ -66,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ----- CONTACT GLASS OVERLAY -----
   const overlay = document.getElementById("contactOverlay");
   const heroContactBtn = document.getElementById("heroContactBtn");
   const closeBtn = document.getElementById("contactCloseBtn");
