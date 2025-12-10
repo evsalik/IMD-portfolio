@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Evgenii Salnikov - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body tabindex="0">
+
+    <div id="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Side navigation -->
+    <aside class="side-nav">
+        <nav id="sideNav" class="nav flex-column nav-pills">
+            <a class="nav-link" href="#hero">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#hobbies">Hobbies</a>
+            <a class="nav-link nav-link-contact" href="#hero" id="contactNav" data-contact="true">
+                Contact
+            </a>
+
+            <!-- Components nav: under contact with extra top margin -->
+            <a class="nav-link nav-link-components" href="components.html" target="_blank" rel="noreferrer">
+                Components
+            </a>
+        </nav>
+
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle color mode">
+            <img src="img/mode.png" alt="Toggle theme">
+        </button>
+    </aside>
+
+    <!-- Page content -->
+    <div class="page-wrapper">
+
+        <!-- Hero -->
+        <header id="hero" class="section-hero d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h1 class="display-3 fw-semibold mb-3">Evgenii Salnikov</h1>
+                        <p class="lead mb-2">
+                            Final-year BSc (Hons) Computing with Software Development student at TU Dublin.
+                        </p>
+                        <p class="lead text-secondary mb-3">
+                            AI &amp; machine learning-focused software developer with a strong interest in backend
+                            systems.
+                        </p>
+
+                        <!-- Social icons in a row -->
+                        <div class="hero-social d-flex gap-3 mb-3">
+                            <a href="https://github.com/evsalik" class="social-circle">
+                                <img src="img/github.png" alt="GitHub">
+                            </a>
+                            <a href="https://www.linkedin.com/in/evgenii-salnikov-9159b429a/" class="social-circle">
+                                <img src="img/linkedin.png" alt="LinkedIn">
+                            </a>
+                            <a href="https://t.me/evsalo    " class="social-circle">
+                                <img src="img/telegram.png" alt="Telegram">
+                            </a>
+                        </div>
+
+                        <!-- Contact me button (opens glass popup) -->
+                        <button type="button" class="btn-contact-glass" id="heroContactBtn">
+                            Contact me
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </header>
+
+    <main>
+        <section id="about" class="section-block bg-body">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    I'm originally from Saint Petersburg, Russia, where
+                    I completed my schooling before moving to Ireland
+                    to study Computing with Software Development at TU
+                    Dublin. I like solving difficult tasks in the
+                    backend,
+                    especially on AI and machine learning. Outside of
+                    college, coding
+                    and work I'm usually either enjoy playing video
+                    games,
+                    or doing something sports-related to clear
+                    my head.
+                </p>
+            </div>
+        </section>
+
+        <section id="education" class="section-block bg-body">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+
+                <div class="row g-4">
+                    <!-- TU Dublin degree -->
+                    <div class="col-lg-6">
+                        <div class="card bg-transparent border-secondary-subtle text-light">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="img/tudublin.png" alt="TU Dublin Logo" class="edu-logo me-3">
+                                    <div>
+                                        <h3 class="h5 mb-0">
+                                            BSc (Hons) in Computing with
+                                            Software Development
+                                        </h3>
+                                        <p class="small text-secondary mb-0">
+                                            TU Dublin - Tallaght Campus
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="small text-secondary mb-2">
+                                    NFQ Level 8 · Honours Bachelor
+                                    Degree
+                                </p>
+                                <p class="small mb-0">
+                                    Stage&nbsp;3 passed with a GPA of
+                                    <strong>3.33</strong> (60 earned
+                                    credits).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Selected modules & grades -->
+                    <div class="col-lg-6">
+                        <div class="card bg-transparent border-secondary-subtle text-light">
+                            <div class="card-body">
+                                <h4 class="h5 mb-3">Selected Stage 3
+                                    Modules &amp; Grades</h4>
+                                <div class="small">
+                                    <div class="d-flex justify-content-between py-1">
+                                        <span><strong>Experiential
+                                                Learning</strong></span>
+                                        <span>PS</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between py-1">
+                                        <span><strong>Server-side Web
+                                                Development</strong></span>
+                                        <span>C+</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between py-1">
+                                        <span><strong>Operating
+                                                Systems</strong></span>
+                                        <span>B+</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between py-1">
+                                        <span><strong>Cloud Services
+                                                &amp; Distributed
+                                                Computing</strong></span>
+                                        <span>B</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between py-1">
+                                        <span><strong>Big Data
+                                                Technologies</strong></span>
+                                        <span>A</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between py-1">
+                                        <span><strong>Data Structures
+                                                &amp;
+                                                Algorithms</strong></span>
+                                        <span>A</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between py-1">
+                                        <span><strong>Data
+                                                Analysis</strong></span>
+                                        <span>B</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SETU Carlow -->
+                    <div class="col-lg-6">
+                        <div class="card bg-transparent border-secondary-subtle text-light">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="img/setu.png" alt="SETU Carlow Logo" class="edu-logo me-3">
+                                    <div>
+                                        <h3 class="h5 mb-0">
+                                            BSc in Science in Computing
+                                            and Programming
+                                        </h3>
+                                        <p class="small text-secondary mb-0">
+                                            SETU Carlow (formerly IT
+                                            Carlow)
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="small mb-0">
+                                    Completed first-year studies in
+                                    Computing &amp; Programming before
+                                    transferring to TU Dublin to
+                                    continue the degree.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Physics & Mathematics Lyceum 30 -->
+                    <div class="col-lg-6">
+                        <div class="card bg-transparent border-secondary-subtle text-light">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="img/30pml.png" alt="Physics & Mathematics Lyceum 30 Logo"
+                                        class="edu-logo edu-logo-30pml me-3">
+                                    <div>
+                                        <h3 class="h5 mb-0">
+                                            Physics and Mathematics
+                                            Lyceum №&nbsp;30
+                                        </h3>
+                                        <p class="small text-secondary mb-0">
+                                            Saint Petersburg, Russia ·
+                                            Sep&nbsp;2018 -
+                                            May&nbsp;2022
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="small mb-0">
+                                    Secondary education with a strong
+                                    focus on advanced mathematics and
+                                    physics, providing a solid
+                                    foundation for studying computing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-block bg-body">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-3">
+                        <strong>Screen Time Tracker</strong> —
+                        A lightweight desktop app (C++) for Windows that
+                        tracks and logs time spent
+                        in active applications. Designed with a minimal
+                        GUI and efficient resource usage.
+                    </li>
+
+                    <li class="mb-3">
+                        <strong>Chat Parser</strong> —
+                        A full-stack web tool (Python + Vue) that parses
+                        exported Telegram JSON files
+                        to visualize 15+ chat metrics. Includes graphs,
+                        message timelines, activity heatmaps,
+                        and conversation statistics.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience" class="section-block bg-body">
+            <div class="container">
+                <div class="d-flex align-items-center section-title mb-3">
+                    <h2 class="m-0">Experience</h2>
+                </div>
+
+                <div class="d-flex align-items-start mt-3">
+
+                    <!-- Left-side logo -->
+                    <img src="img/ibm.png" alt="IBM Logo" class="exp-logo me-4">
+
+                    <!-- Right-side text block -->
+                    <div>
+                        <h4 class="mb-1">
+                            <strong>Software Developer Intern — IBM
+                                Ireland</strong>
+                            <span class="text-secondary">(Process Mining
+                                Team · Jan 2025 - Sep 2025)</span>
+                        </h4>
+
+                        <p class="mb-0">
+                            Working on the Automation Planner project,
+                            an agentic RAG solution for
+                            IBM Process Mining customers. Developed a
+                            vectorization and retrieval
+                            pipeline for custom documents and
+                            contributed to agent prompt-engineering
+                            and automation workflows.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-block bg-body">
+            <div class="container">
+                <h2 class="section-title">Skills &amp; Achievements</h2>
+
+                <ul class="list-unstyled mt-3">
+
+                    <div class="tech-stack-meter mt-4">
+                        <h3 class="h5 mb-3">Tech Stack Meter</h3>
+
+                        <div class="skill-bar" data-level="66" data-accent="python">
+                            <div class="skill-bar-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level-label">Advanced</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-inner"></div>
+                                <div class="skill-bar-glow"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar" data-level="52" data-accent="cpp">
+                            <div class="skill-bar-header">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-level-label">Advanced</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-inner"></div>
+                                <div class="skill-bar-glow"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar" data-level="46" data-accent="ml">
+                            <div class="skill-bar-header">
+                                <span class="skill-name">Machine Learning / AI</span>
+                                <span class="skill-level-label">Strong</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-inner"></div>
+                                <div class="skill-bar-glow"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar" data-level="60" data-accent="docker">
+                            <div class="skill-bar-header">
+                                <span class="skill-name">Docker & DevOps</span>
+                                <span class="skill-level-label">Strong</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-inner"></div>
+                                <div class="skill-bar-glow"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar" data-level="28" data-accent="backend">
+                            <div class="skill-bar-header">
+                                <span class="skill-name">Backend & APIs</span>
+                                <span class="skill-level-label">Moderate</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-inner"></div>
+                                <div class="skill-bar-glow"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar" data-level="82" data-accent="data">
+                            <div class="skill-bar-header">
+                                <span class="skill-name">Data / SQL / Big Data</span>
+                                <span class="skill-level-label">Comfortable</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-inner"></div>
+                                <div class="skill-bar-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <li class="mb-3">
+                        <strong>Programming Languages:</strong>
+                        Java (OOP, JDBC, Lombok, Java Swing), Python
+                        (LangChain, LangGraph),
+                        C, C++, JavaScript, PHP, MySQL, HTML5, CSS, 68K
+                        Assembly, x86-64 Assembly.
+                    </li>
+
+                    <li class="mb-3">
+                        <strong>Tools &amp; Technologies:</strong>
+                        Git, Docker, Bash, expect, make, Figma,
+                        JetBrains IDEs.
+                    </li>
+
+                    <li class="mb-3">
+                        <strong>Networking:</strong>
+                        Linux OS, Basic Networking (Router/Switch
+                        config, deployments).
+                    </li>
+
+                    <li class="mb-3">
+                        <strong>Other:</strong>
+                        Blender, Unreal Engine 5, Source 2 Hammer.
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section id="hobbies" class="section-block bg-body">
+            <div class="container">
+                <h2 class="section-title">Hobbies &amp; Interests</h2>
+
+                <div class="hobby-grid mt-4">
+                    <!-- Video games -->
+                    <article class="hobby-card">
+                        <div class="hobby-header">
+                            <h3 class="h6 hobby-title mb-0">Video Games</h3>
+                        </div>
+                        <p class="hobby-text mb-0">
+                            I play a mix of competitive shooters and story-driven games.
+                            Games are where I switch off, but also where I enjoy thinking
+                            about systems, balance and level design.
+                        </p>
+                    </article>
+
+                    <!-- Tennis & other sports -->
+                    <article class="hobby-card">
+                        <div class="hobby-header">
+                            <h3 class="h6 hobby-title mb-0">Tennis &amp; Other Sports</h3>
+                        </div>
+                        <p class="hobby-text mb-0">
+                            I like playing tennis and staying active in general.
+                            Running, cycling and other sports help me reset after long
+                            coding sessions and keep my focus sharp.
+                        </p>
+                    </article>
+
+                    <!-- Movies / shows -->
+                    <article class="hobby-card">
+                        <div class="hobby-header">
+                            <h3 class="h6 hobby-title mb-0">Movies &amp; Series</h3>
+                        </div>
+                        <p class="hobby-text mb-0">
+                            I enjoy movies and series that have strong world-building,
+                            good pacing and clever writing. I'm usually drawn to sci-fi,
+                            thrillers and grounded dramas.
+                        </p>
+                    </article>
+
+                    <!-- Flexible “other stuff” card -->
+                    <article class="hobby-card">
+                        <div class="hobby-header">
+                            <h3 class="h6 hobby-title mb-0">Other Things I Enjoy</h3>
+                        </div>
+                        <p class="hobby-text mb-0">
+                            Occasionally I explore new tools and workflows. It is a mix
+                            of fun and curiosity that usually feeds back into my projects.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-3 text-center small text-muted">
+        <div class="container">
+            &copy; <span id="year"></span> Evgenii Salnikov. All rights
+            reserved.
+        </div>
+    </footer>
+
+    </div> <!-- /.page-wrapper -->
+
+    <svg style="position:fixed; width:0; height:0; pointer-events:none;" aria-hidden="true" focusable="false">
+        <filter id="glassDisplacement" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox"
+            color-interpolation-filters="sRGB">
+            <!-- smoother noise -->
+            <feturbulence type="fractalNoise" baseFrequency="0.006" numOctaves="1" seed="3" result="turbulence" />
+            <fegaussianblur in="turbulence" stdDeviation="1.5" result="softNoise" />
+            <fedisplacementmap in="SourceGraphic" in2="softNoise" scale="16" xChannelSelector="R"
+                yChannelSelector="G" />
+        </filter>
+    </svg>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    <div id="contactOverlay" class="contact-overlay">
+        <div class="contact-modal">
+            <button type="button" class="contact-close" id="contactCloseBtn" aria-label="Close contact form">
+                <img src="img/delete.png" alt="Close">
+            </button>
+
+            <h3 class="h5 mb-3">Contact Me</h3>
+
+            <form>
+                <div class="mb-3">
+                    <label for="contactName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="contactName" placeholder="Your name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="contactEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="contactEmail" placeholder="your.email@example.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="contactMessage" class="form-label">Message</label>
+                    <textarea class="form-control" id="contactMessage" rows="3"
+                        placeholder="Tell me a bit about what you have in mind"></textarea>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <a id="contactSendLink" class="contact-send-btn" href="#">
+                        Send
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

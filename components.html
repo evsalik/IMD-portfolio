@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Components & Features - Evgenii Salnikov</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2.5rem 1.5rem 3rem;
+      background: #000000;
+      color: #f5f5f5;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+      margin-top: 1.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-top: 0;
+    }
+
+    p {
+      margin-top: 0.3rem;
+      margin-bottom: 0.9rem;
+    }
+
+    ul {
+      margin-top: 0.4rem;
+      margin-bottom: 1rem;
+      padding-left: 1.1rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    code {
+      font-family: Consolas, "Fira Code", "Source Code Pro", monospace;
+      font-size: 0.9em;
+      background: #111827;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .small-note {
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    .section-muted {
+      opacity: 0.9;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #27272f;
+      margin: 2rem 0 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Components &amp; Dynamic Features</h1>
+    <p class="small-note">
+      This page outlines the Bootstrap components and custom JavaScript features
+      used in my interactive portfolio website for the
+      <strong>Data Visualisation CA 2</strong> assignment.
+    </p>
+
+    <hr>
+
+    <h2>Hosting URL</h2>
+    <p>
+      The portfolio website is hosted at:
+    </p>
+    <p>
+      <strong>
+        <a href="https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/" target="_blank" rel="noreferrer">
+          https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
+        </a>
+      </strong>
+    </p>
+    <p class="small-note">
+      (Replace this with the final GitHub Pages URL for submission.)
+    </p>
+
+    <h2>Bootstrap Components and Classes Used</h2>
+    <p class="section-muted">
+      The site uses Bootstrap 5 for layout, grid, and utility classes, while
+      all visual styling and interactivity are implemented manually.
+    </p>
+    <ul>
+      <li>
+        <strong>Grid system:</strong>
+        <code>.container</code>, <code>.row</code>, <code>.col-lg-*</code> to layout
+        the hero, education cards, experience, and other sections.
+      </li>
+      <li>
+        <strong>Cards:</strong>
+        Education and experience details use
+        <code>.card</code>, <code>.card-body</code>,
+        and <code>.border-secondary-subtle</code> as a base.
+      </li>
+      <li>
+        <strong>Navigation (pills):</strong>
+        The side navigation uses <code>.nav</code>, <code>.flex-column</code>,
+        and <code>.nav-pills</code> for the vertical navigation structure.
+      </li>
+      <li>
+        <strong>Typography utilities:</strong>
+        Classes such as <code>.display-3</code>, <code>.lead</code>,
+        <code>.h5</code>, <code>.small</code>, and
+        <code>.text-secondary</code> for consistent headings and text.
+      </li>
+      <li>
+        <strong>Spacing utilities:</strong>
+        Margin and padding helpers like <code>.mb-3</code>, <code>.mt-4</code>,
+        <code>.py-3</code>, <code>.g-4</code> to control spacing between sections
+        and components.
+      </li>
+      <li>
+        <strong>Flex utilities:</strong>
+        <code>.d-flex</code>, <code>.align-items-center</code>,
+        <code>.justify-content-between</code> for aligning content inside cards,
+        the hero section, and the experience layout.
+      </li>
+      <li>
+        <strong>Responsive behaviour:</strong>
+        Bootstrap’s responsive breakpoints are used with
+        <code>.col-lg-*</code> and media queries in custom CSS to ensure
+        usability on mobile, tablet, and desktop.
+      </li>
+    </ul>
+
+    <h2>Custom JavaScript Features</h2>
+    <p class="section-muted">
+      All dynamic behaviour required by the CA brief is implemented with
+      custom JavaScript in <code>js/main.js</code>; it does not rely on
+      Bootstrap’s JavaScript plugins.
+    </p>
+    <ul>
+      <li>
+        <strong>Theme switcher:</strong>
+        A “theme toggle” button applies and removes a
+        <code>.theme-light</code> class on the <code>&lt;body&gt;</code>,
+        switching between dark and light glass themes.
+      </li>
+      <li>
+        <strong>Smooth scrolling navigation:</strong>
+        Clicking side navigation links scrolls smoothly to the chosen
+        section and briefly highlights the active nav item.
+      </li>
+      <li>
+        <strong>Contact modal dialog:</strong>
+        The “Contact” nav item and “Contact me” hero button open a
+        custom glass overlay with a contact form. The overlay can be
+        closed by clicking outside the panel or pressing <code>Esc</code>.
+      </li>
+      <li>
+        <strong>Email sending via form:</strong>
+        The “Send” button reads the form fields and opens the user’s
+        default mail client using a <code>mailto:</code> link that
+        pre-populates the subject and body with the entered details.
+      </li>
+      <li>
+        <strong>Animated background blobs:</strong>
+        Three blurred “blob” elements in the background respond to mouse
+        movement, creating a subtle parallax effect.
+      </li>
+      <li>
+        <strong>Tech Stack Meter (skill bars):</strong>
+        Custom IntersectionObserver logic fills glass “skill bars” once
+        they scroll into view. Each bar animates from 0&nbsp;% width to
+        its configured percentage and adds a soft glow.
+      </li>
+      <li>
+        <strong>Skill bar hover ripple:</strong>
+        Moving the cursor over a skill bar updates CSS custom properties
+        to draw a radial highlight under the pointer, creating a ripple
+        effect on hover.
+      </li>
+      <li>
+        <strong>Hobbies glass cards:</strong>
+        Hobbies/Interests are displayed in transparent glass cards that
+        lift and glow slightly on hover for a subtle interactive feel.
+      </li>
+    </ul>
+
+    <h2>Main Content Sections</h2>
+    <p class="section-muted">
+      The single-page portfolio layout includes all sections required by
+      the CA brief:
+    </p>
+    <ul>
+      <li>Hero section with name, discipline, and social links</li>
+      <li>About Me section</li>
+      <li>Education (with module grades)</li>
+      <li>Projects</li>
+      <li>Work Experience / Placement</li>
+      <li>Skills &amp; Achievements (including Tech Stack Meter)</li>
+      <li>Hobbies &amp; Interests</li>
+      <li>Detailed Contact section (modal dialog)</li>
+    </ul>
+
+    <hr>
+
+    <h3>Navigation</h3>
+    <p>
+      To return to the main portfolio page, use your browser’s back
+      button or open:
+      <br>
+      <strong>
+        <a href="index.html">index.html (main portfolio)</a>
+      </strong>
+    </p>
+  </main>
+</body>
+</html>
