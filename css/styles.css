@@ -1120,7 +1120,7 @@ body.theme-light .skill-bar::before {
 
 .hobby-text {
   font-size: 0.92rem;
-  color: var(--text-secondary);
+  color: #ebf1ff;;
 }
 
 .hobby-card:hover {
@@ -1170,4 +1170,8 @@ body.theme-light .hobby-text {
 body.theme-light .hobby-card:hover {
   background: rgba(0,0,0,0.06);
   border-color: rgba(0,0,0,0.35);
+}
+
+#hero p.lead.text-secondary {
+  color: #a1a6b6 !important;
 }
