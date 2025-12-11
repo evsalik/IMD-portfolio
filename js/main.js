@@ -6,21 +6,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Footer year
   const yearSpan = document.getElementById("year");
   if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
   const navLinks = Array.from(document.querySelectorAll(".side-nav .nav-link"));
   const blobs = Array.from(document.querySelectorAll(".blob"));
-  const strengths = [40, 80, 120]; // blob movement strength
+  const strengths = [40, 80, 120];
 
-  // Smooth scroll + flash (except Contact, which opens overlay)
   navLinks.forEach(link => {
     const isContact = link.dataset.contact === "true";
 
     link.addEventListener("click", (event) => {
       if (isContact) {
-        // Contact nav opens overlay instead of scrolling
         event.preventDefault();
         openContactOverlay();
         flashLink(link);
@@ -47,11 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function flashLink(link) {
     link.classList.remove("nav-flash");
-    void link.offsetWidth; // force reflow
+    void link.offsetWidth;
     link.classList.add("nav-flash");
   }
 
-  // Blob parallax
   window.addEventListener("mousemove", (event) => {
     const { innerWidth, innerHeight } = window;
     const normX = (event.clientX / innerWidth - 0.5) * 2;
@@ -90,7 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (overlay) {
     overlay.addEventListener("click", (event) => {
-      // click on dark backdrop closes, click on panel doesn't
       if (event.target === overlay) {
         closeContactOverlay();
       }
@@ -117,7 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
           const level = bar.getAttribute("data-level");
 
           if (inner && level) {
-            // trigger fill animation once
             inner.style.width = level + "%";
           }
           if (glow) {
@@ -135,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
     skillBars.forEach((bar) => {
       const inner = bar.querySelector(".skill-bar-inner");
       if (inner) {
-        inner.style.width = "0%"; // ensure empty at start
+        inner.style.width = "0%";
       }
       observer.observe(bar);
     });
